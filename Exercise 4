@@ -1,0 +1,10 @@
+def calcTuition(credits):
+  if credits >= 12:
+    print(f'Tuition = {20000}$')
+  elif credits >= 1:
+    print(f'Tuition = {1200 + 1700*credits}$')
+  else:
+    print('Invalid number of credits')
+
+numbercredit = int(input('Enter number of credits: '))
+calcTuition(numbercredit)
